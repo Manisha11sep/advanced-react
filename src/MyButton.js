@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class MyButton extends Component {
   render() {
-    const { value: { a, b, c }} = this.props;
+    // const { value: { a, b, c }} = this.props;
     // const a = this.props.value.a;
     return (
       <button>{this.props.text}</button>
