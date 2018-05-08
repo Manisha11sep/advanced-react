@@ -7,10 +7,16 @@ export class Tabs extends Component {
             activeTabIndex:0,
         }
     }
+
+
   render() {
+      const tabToShow = null;
+      const childrenToShow = React.Children.toArray(this.props.children)
     return (
         <div>
-        {this.props.children}
+            <nav>{childrenToShow.map((x,i)=><button onClick={()=>this.setState({activeTabIndex:i})} key={x.props.val}>{x.props.tab} </button>)}
+             </nav>
+             {childrenToShow[this.state.activeTabIndex]}
         </div>
       
     );
