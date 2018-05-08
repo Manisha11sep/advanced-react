@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <MyButton value={{c:[1]}} />
+        <MyButton  />
       </div>
     );
   }
